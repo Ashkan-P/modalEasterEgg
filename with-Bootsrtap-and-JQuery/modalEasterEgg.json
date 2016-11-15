@@ -1,0 +1,7 @@
+{
+  "theElement": "my-element",
+  "theCharacter": "i",
+  "theMessage": "This was supposed to be my secret message.<br><br>How did you find it? :D",
+  "messageStyle": "style='background-color:#F2DEDE;color:brown;font-size:1.3em;padding:25px 0px;'",
+  "modalBlock": "<div class='modal fade' id='myModal' role='dialog'><div class='modal-dialog'><!-- Modal content--><div class='modal-content'  ><div class='modal-body'><button onclick=\"$('#myModal').modal('hide');\" type='button' class='close' data-dismiss='modal'>&times;</button><p style='text-align:center;'>  </p></div></div></div></div><script>$('#myModal').modal('show');</script>"
+}
