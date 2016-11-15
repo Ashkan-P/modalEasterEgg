@@ -4,7 +4,7 @@ modalEasterEgg is an easy-to-use modal [Easter Egg](https://en.wikipedia.org/wik
 
 There are two versions of modalEasterEgg:   
    1. With Bootstrap and JQuery    
-   2. With pure JavaScript   
+   2. With JavaScript   
    
       
 **Usage:**
@@ -46,7 +46,7 @@ All you need to do is:
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
    ```
 
-**4.** If you want to use the version with _**pure JavaScript**_, Add `modalEasterEgg.min.css` to your webpages.
+**4.** If you want to use the version with _**JavaScript**_, Add `modalEasterEgg.min.css` to your webpages.
 
    ```html
    <script type="text/javascript" src="/your path here/modalEasterEgg.min.css"></script>
