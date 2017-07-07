@@ -1,0 +1,7 @@
+{
+  "theElement": "my-element",
+  "theCharacter": "i",
+  "theMessage": "This was supposed to be my secret message.<br><br>How did you find it? :D<br><br><br>You don't like this style? Don't worry! You can change it from the file of modalEasterEgg.json.",
+  "messageStyle": "style='background-color:#F2DEDE;color:brown; font-size:1.3em; text-align:center;padding:25px;'",
+  "modalBlock": "<div style='display:block;' id='myModal' class='modal'><div class='modal-content'  ><span class='close' onclick='this.parentElement.parentElement.style.display = \"none\";'>×</span><p>the message</p></div></div>"
+}

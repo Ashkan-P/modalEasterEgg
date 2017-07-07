@@ -1,0 +1,77 @@
+
+*{
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+
+html { 
+    font-family: sans-serif; /* 1 */ 
+    -ms-text-size-adjust: 100%; /* 2 */ 
+    -webkit-text-size-adjust: 100%; /* 2 */ 
+}
+
+body{
+    font-size: 16px;
+    line-height: 1.5;
+    color: #24292e;
+    padding: 15px;
+    background-color: #f6f8fa;
+}
+
+header{
+    width: 100%;
+    border-bottom: 2px solid #adbfd2;
+}
+header h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+code{
+    font-family: Courier New, Courier, monospace;
+
+}
+
+.customCode pre {
+    margin: 0;
+}
+.customCode pre code {
+    background: transparent;
+    padding: 0;
+    background-color: #dee6ed;
+    padding-left: 4em;
+    position: relative;
+    display: block;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.customCode pre code:after {
+    content: '1 \A 2 \A 3 \A 4 \A 5 \A 6 \A 7 \A 8 \A 9 \A 10 \A 11 \A 12 \A 13 \A 14 \A 15 \A 16 \A 17 \A 18 \A 19 \A 20 \A 21 \A 22 \A 23 \A 24 \A 25 \A 26 \A 27 \A 28 \A 29 \A 30';
+    white-space: pre;
+    position: absolute;
+    display: block;
+    font-family: monospace;
+    left: .5em;
+    top: 0;
+    text-align: right;
+    color: #a2a2a2;
+    border-right: 4px solid #6CE26C
+}
+
+
+#my-element{
+    background-color: #4CAF50;
+    padding: 20px 30px;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.text-align-center{
+    text-align: center;
+}
+
+.margin-bottom-0{
+    margin-bottom: 0;
+}

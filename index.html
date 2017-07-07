@@ -1,0 +1,120 @@
+<html>
+<head>
+    <title>Modal Easter Egg</title>
+    <meta charset="utf-8" />
+    <!--<link rel="icon" type="image/png" href="images/favicon.png">-->
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="description" content="Modal Easter Egg, An easy way to hide data in a web page">
+    <meta name="keywords" content="Eeaster egg, modal, steganography, web page">
+    <meta name="language" content="en">
+    <meta name="robots" content="all" />
+    <meta name="rights" content="Copyright © 2017 Ashkan Palganeh - All rights reserved">
+    <meta name="Copyright" content="Ashkan Palganeh">
+    <meta name="Designer" content="https://github.com/Ashkanph">
+    <meta name="Publisher" content="Ashkan Palgane">
+    <meta name="distribution" content="Global">
+    <meta name="Robots" content="INDEX,FOLLOW">
+    <meta property="og:title" content="Modal Easter Egg" />
+    <meta property="og:site_name" content="Modal Easter Egg"/>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://ashkanph.github.io/ModalEasterEgg">
+    <meta property="og:description" content="An easy way to hide data in a web page" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">   
+    <link rel="author" href="http://ashkanph.github.io"> 
+    
+    <link rel="stylesheet" href="stylesheet/style.css"> 
+    <link rel="stylesheet" href="stylesheet/modalEasterEgg.min.css"> 
+
+</head>
+<body>
+    <header>
+        <h1>Modal Easter Egg</h1>
+    </header>
+    <br>
+    <p>modalEasterEgg is an easy-to-use modal <a href="https://en.wikipedia.org/wiki/Easter_egg_%28media%29">Easter Egg</a> for web pages. modalEasterEgg <strong>uses both mouse and keyboard events</strong> and <strong>load the settings from a json file (modalEasterEgg.json)</strong>. Options which can be changed are: id of a HTML element (one of your webpage elements), a character, your message and its CSS style. When the user goes over the element with the mouse and presses the predefined character from keyboard, the hidden message will be showed in a JavaScript modal.</p>
+    There are two versions of modalEasterEgg:
+        <ol>
+            <li> With Bootstrap and JQuery
+            </li>
+            <li>With JavaScript
+            </li>
+        </ol>
+    <br>
+    <h2 class="margin-bottom-0">Demo:</h2>
+        <div id="my-element">
+            With your mouse go over this green box and click the key '<strong>i</strong>' on your keyboard to see the secret message!
+        </div>
+    <h2>Usage:</h2>
+    <p>All you need to do is:</p>
+    <ol>
+        <li>
+            All the settings is saved in a json file. You want to change the settings? No problem; Change them in the <code>modalEasterEgg.json</code>. Don't forget to put the modalEasterEgg.json in the proper address (default is the same folder of your webpages):</li>
+            <ul>
+                <li><strong>theElement</strong> → The ID of the HTML element for the mouse event.</li>
+                <li><strong>theMessage</strong> → The text of your message (You can add HTML tags too).</li>
+                <li><strong>theCharacter</strong> → The character for the keyboard event.</li>
+                <li><strong>messageStyle</strong> → The CSS style for your message.</li>
+                <li><strong>modalBlock</strong> → This is the modal block. Don't change it. Each version of modalEasterEgg (with pure JavaScript/with Bootsrtap and JQuery) uses different modalBlock.</li>
+            </ul>
+            <div class="customCode">
+                <pre>
+                    <code>
+    /*    This is  how  the  modalEasterEgg.json     
+    *    looks  like  (for the  pure JavaScript     
+    *    version). All the settings go here and     
+    *    can be changed easily.     
+    */    
+    {   
+        &quot;theElement&quot;: &quot;my-element&quot;,
+        &quot;theCharacter&quot;: &quot;i&quot;,
+        &quot;theMessage&quot;: &quot;This was supposed to be my secret message.&lt;br&gt;&lt;br&gt;How did you find it? :D&quot;,
+        &quot;messageStyle&quot;: &quot;style='background-color:#F2DEDE;color:brown; font-size:1.3em; text-align:center;padding:25px;'&quot;,
+        &quot;modalBlock&quot;: &quot;&lt;div style='display:block;' id='myModal' class='modal'&gt;&lt;div class='modal-content'  &gt;&lt;span class='close' onclick='this.parentElement.parentElement.style.display = \&quot;none\&quot;;'&gt;×&lt;/span&gt;&lt;p&gt;the message&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&quot;    
+    }
+                    </code>
+                </pre>
+            </div>
+        </li>
+
+        <li>
+            Add <code>modalEasterEgg.min.js</code> to your codes: 
+            <div class="customCode">
+                <pre>
+                    <code>&lt;script type=&quot;text/javascript&quot; src=&quot;/your path here/modalEasterEgg.min.js&quot;&gt;&lt;/script&gt;</code>
+                </pre>
+            </div>
+        </li>
+        <li>
+            If you want to use the version with <em><strong>Bootstrap and JQuery</strong></em>, Add <code>bootstrap.min.css</code>, <code>bootstrap.min.js</code> and <code>jquery.min.js</code> to your webpages:</p>
+            <div class="customCode">
+                <pre>
+                    <code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css&quot;&gt;
+&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;</code>
+                </pre>
+            </div>
+        </li>
+        <li>
+            If you want to use the version with <em><strong>JavaScript</strong></em>, Add <code>modalEasterEgg.min.css</code> to your webpages.</p>
+            <div class="customCode">
+                <pre>
+                    <code>&lt;link rel=&quot;stylesheet&quot; src=&quot;/your path here/modalEasterEgg.min.css&quot;&gt;</code>
+                </pre>
+            </div>   
+        </li>
+        <li>
+            Add <code>&lt;div id=&quot;the-div&quot;&gt;&lt;/div&gt;</code> to the body of your webpages. Don't change the id.</p>
+        </li>
+    </ol>
+    <br>
+    <br>
+    <h2>Credits:</h2>By Ashkan Palganeh
+    <br>
+    <h2>License:</h2>MIT License
+    <br>
+    <div id="the-div"></div>
+
+    <script src="js/modalEasterEgg.min.js"></script>
+
+</body>
+</html>
