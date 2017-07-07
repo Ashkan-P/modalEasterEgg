@@ -1,11 +1,15 @@
+
+<br>
+
 # modalEasterEgg
 
-modalEasterEgg is an easy-to-use modal [Easter Egg](https://en.wikipedia.org/wiki/Easter_egg_%28media%29) for web pages. modalEasterEgg **uses both mouse and keyboard events** and **uses a json file (modalEasterEgg.json) to load the options**. Options which can be changed are: id of a HTML element (one of your webpage elements), a character, your message and its CSS style. When the user goes over the element with the mouse and presses the predefined character from keyboard, the hidden message will be showed in a JavaScript modal.
+modalEasterEgg is an easy-to-use modal [Easter Egg](https://en.wikipedia.org/wiki/Easter_egg_%28media%29) for web pages. modalEasterEgg **uses both mouse and keyboard events** and **load the settings from a json file (modalEasterEgg.json)**. Options which can be changed are: id of a HTML element (one of your webpage elements), a character, your message and its CSS style. When the user goes over the element with the mouse and presses the predefined character from keyboard, the hidden message will be showed in a JavaScript modal.
 
 There are two versions of modalEasterEgg:   
    1. With Bootstrap and JQuery    
    2. With JavaScript   
 
+<br>
 
 **Usage:**
 
@@ -21,9 +25,10 @@ All you need to do is:
 
 ```json
    /*    This is  how  the  modalEasterEgg.json
-          looks  like  (for the  pure JavaScript
-          version). All the settings go here and
-          can be changed easily.     */
+    *    looks  like  (for the  pure JavaScript
+    *    version). All the settings go here and
+    *    can be changed easily.
+    */
    {
        "theElement": "my-element",
        "theCharacter": "i",
@@ -54,11 +59,14 @@ All you need to do is:
 
 **5.** Add `<div id="the-div"></div>` to the body of your webpages. Don't change the id.     
 
-
+<br>
 
 **Credits:**  
 By Ashkan Paleganeh   
 
+<br>
 
 **License:**  
 MIT License
+
+<br>
