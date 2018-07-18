@@ -62,7 +62,7 @@ All you need to do is:
 <br>
 
 **Credits:**  
-By Ashkan Paleganeh   
+By AshkanPH
 
 <br>
 
