@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2016 Ashkan Paleganeh
+Copyright (c) 2016 AshkanPH
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -22,19 +22,18 @@ SOFTWARE.
 'use strict';
 
 var mouseEnterFlag=false; // to know if mouse is over the element or not
-var data; // to store the content of the json file
-var myElement; // the element you want to check if the mouse is over it
+var data;                 // to store the content of the json file
+var myElement;          // the element you want to check if the mouse is over it
 
 // a function for reading json files
 function loadJSON(fileAddress, callback) {
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType("application/json");
-    xobj.open('GET', fileAddress, true); // Replace 'my_data' with the path to your file
+    xobj.open('GET', fileAddress, true);
     xobj.onreadystatechange = function () {
-          if (xobj.readyState == 4 && xobj.status == "200") {
-            // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
-            callback(xobj.responseText);
-          }
+        if (xobj.readyState == 4 && xobj.status == "200") {
+          callback(xobj.responseText);
+        }
     };
     xobj.send(null);
 }
@@ -50,28 +49,25 @@ loadJSON("modalEasterEgg.json", function(response) {
    // two events to change mouseEnterFlag when mouse enter the element and leave
    myElement.onmouseover = function(){
      mouseEnterFlag=true;
-     //console.log("mouse is over the Element");
    }
    myElement.onmouseout = function() {
      mouseEnterFlag=false;
-     //console.log("mouse not over the Element");
    }
 
    // when a key is pressed
    document.getElementsByTagName("body")[0].onkeypress= function keyPressed(event) {
         var theCharacter=event.key;
-        //console.log(mouseEnterFlag +"   "+theCharacter);
         theCharacter = theCharacter.toUpperCase();
         data['theCharacter'] = data['theCharacter'].toUpperCase();
-
         /* If mouse is over the element and the predefined key have been pressed,
            show the predefined message */
         if (mouseEnterFlag===true && theCharacter===data['theCharacter']){
             var theDiv = document.getElementById("the-div");
-            var messageBlock =  data['modalBlock'].substring(0,82)+ data['messageStyle']
-                                + data['modalBlock'].substring(83,182) + data['theMessage']
-                                + data['modalBlock'].substring(193,211);
-            console.log(data['theMessage']);
+            var messageBlock =  data.modalBlock.substring(0,82) + 
+                                data.messageStyle +
+                                data.modalBlock.substring(83,182) + 
+                                data.theMessage +
+                                data.modalBlock.substring(193,211);
             theDiv.innerHTML = messageBlock;
         }
    };
