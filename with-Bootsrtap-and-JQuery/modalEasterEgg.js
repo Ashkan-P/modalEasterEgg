@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2016 Ashkan Paleganeh
+Copyright (c) 2016 AshkanPH
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -20,7 +20,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 $(document).ready(function(){
-
    $.ajax({
       type: 'post',
       url: "modalEasterEgg.json", // The address of modalEasterEgg.json file
@@ -35,21 +34,22 @@ $(document).ready(function(){
           var mouseEnterFlag = false;  // to know if mouse is over the element or not
           $("#"+data['theElement']).hover(function(){
               mouseEnterFlag = true;
-              //console.log("mouse is over the element");
             }, function() {
               mouseEnterFlag = false;
-              //console.log("mouse is not over the element");
           });
 
           // when a key is pressed
           $(document).keyup(function(event){
               if (mouseEnterFlag == true){
-                /* If mouse is over the element and the predefined key have been pressed,
+                /* If mouse is over the element and 
+                   the predefined key have been pressed, 
                    show the predefined message */
                 if(String.fromCharCode(event.which) == data['theCharacter'].toUpperCase()){
-                  var messageBlock =  data['modalBlock'].substring(0,124)+ data['messageStyle']
-                                      + data['modalBlock'].substring(125,294) + data['theMessage']
-                                      + data['modalBlock'].substring(295,368);
+                  var messageBlock =  data.modalBlock.substring(0,124) + 
+                                      data.messageStyle +
+                                      data.modalBlock.substring(125,294) + 
+                                      data.theMessage +
+                                      data.modalBlock.substring(295,368);
                   $("#the-div").html(messageBlock);
                   console.log(data['theMessage']);
                 }
