@@ -1,3 +1,6 @@
+<p align="center">
+  <img width="233" height="177" src="https://user-images.githubusercontent.com/22937754/50697423-7012f300-1057-11e9-913f-dcafe36db058.png">
+</p>
 
 <br>
 
